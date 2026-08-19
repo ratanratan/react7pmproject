@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/Veg.css";
 import { toast, ToastContainer } from "react-toastify";
-import { useDispatch } from "react-redux";
-import { addToCart } from "../redux/CartSlice";
+// import { useDispatch } from "react-redux";
+// import { addToCart } from "../redux/CartSlice";
 
 function Veg() {
   const vegetables = [
