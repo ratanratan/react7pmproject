@@ -52,6 +52,10 @@ function Login() {
         />
         <br /><br />
 
+        If you are not registered yet, please <button type="button" onClick={() => navigate("/register")}>
+          Register
+        </button>
+
         <button type="submit">Login</button>
       </form>
     </>
