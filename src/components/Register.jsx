@@ -1,10 +1,12 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import "../cssstyles/Register.css";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
   const { register, handleSubmit, reset } = useForm();
 
+  let navigate = useNavigate();
   const registerLogics = (userdata) => {
 
     // const response = await axios.post("http://localhost:8005/api/auth/register",userdata);
@@ -17,6 +19,7 @@ function Register() {
 
     alert("Registration Successful...");
     reset();
+    navigate("/login");
   };
 
   return (
